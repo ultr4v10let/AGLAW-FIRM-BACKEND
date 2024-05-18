@@ -5,3 +5,6 @@ class News(models.Model):
     link = models.TextField(blank=True)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to = 'news/')
+
+    def __str__(self):
+        return self.title

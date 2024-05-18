@@ -22,6 +22,7 @@ from teammembers.views import TeamMembersList
 from legalservices.views import LegalServicesList
 from news.views import NewsList
 from clients.views import ClinetsList
+from gallery.views import GalleryList
 
 
 urlpatterns = [
@@ -30,6 +31,7 @@ urlpatterns = [
     path('legal-services/', LegalServicesList.as_view()),
     path('news/', NewsList.as_view()),
     path('clients/', ClinetsList.as_view()),
+    path('gallery/', GalleryList.as_view())
 
 ]
 

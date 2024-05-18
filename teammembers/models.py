@@ -5,3 +5,6 @@ class TeamMembers(models.Model):
     title = models.TextField(blank=True)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to = 'teammembers/')
+
+    def __str__(self):
+        return self.name
